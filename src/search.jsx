@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Search, X } from 'lucide-react';
 
-const AnimatedSearch = () => {
+const SearchPage = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
@@ -75,4 +75,4 @@ const AnimatedSearch = () => {
   );
 };
 
-export default AnimatedSearch;
+export default SearchPage;

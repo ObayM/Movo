@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Lock, LogIn, Film } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
