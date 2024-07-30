@@ -24,8 +24,13 @@ const AnimatedSearch = () => {
     setSearchTerm('');
     setSearchResults([]);
   };
+  const containerStyle = {
+    padding: '10px',
+    minHeight:' calc(100vh - 64px)',
+  };
 
   return (
+    <div style={containerStyle} className="container bg-gradient-to-br from-gray-900 to-indigo-900 ">
     <div className="relative w-full max-w-2xl mx-auto mt-8">
       <div className={`flex items-center bg-white rounded-full overflow-hidden transition-all duration-300 ease-in-out ${isExpanded ? 'w-full' : 'w-12 h-12'}`}>
         <button
@@ -65,6 +70,7 @@ const AnimatedSearch = () => {
           </ul>
         </div>
       )}
+    </div>
     </div>
   );
 };
